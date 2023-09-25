@@ -7,7 +7,38 @@
     <title>sergiobarros_</title>
 </head>
 <body>
-    
+
+    <header>
+        
+    </header>
+    <main>
+        
+        <section id="Stream">
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
+
+            <!-- Load the Twitch embed script -->
+            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+            <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+            <script type="text/javascript">
+            new Twitch.Player("twitch-embed", {
+                channel: "sergiobarros_"
+            });
+            </script>
+
+            <iframe
+                id="chat_embed"
+                src="https://www.twitch.tv/embed/sergiobarros_/chat?parent=www.example.com"
+                height="500"
+                width="350">
+            </iframe>
+        </section>
+
+    </main>
+    <footer>
+        
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
